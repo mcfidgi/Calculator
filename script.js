@@ -24,3 +24,15 @@ let firstNumber = `clear`;
 let operator = `clear`;
 let secondNumber = `clear`;
 let result = `clear`;
+
+function operate(firstNumber, operator, secondNumber) {
+    if (operator == `add`) {
+        return add(firstNumber, secondNumber);
+    } else if (operator == `subtract`) {
+        return subtract(firstNumber, secondNumber);
+    } else if (operator == `multiply`) {
+        return multiply(firstNumber, secondNumber);
+    } else if (operator == `divide`) {
+        return divide(firstNumber, secondNumber);   
+    } else {alert(`Something went wrong. Operator error`)}
+};
