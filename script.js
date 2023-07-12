@@ -18,3 +18,9 @@ const multiply = function(...numbas) {
 const divide = function(x,y) {
     return x/y;
 };
+
+// Alrught, below will be the display variables. They will be:
+let firstNumber = `clear`;
+let operator = `clear`;
+let secondNumber = `clear`;
+let result = `clear`;
