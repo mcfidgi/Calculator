@@ -2,18 +2,26 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #calculator {
     border-style: solid;
-}
-
-.buttons {
-    display: flex;
-    justify-content:space-around;
+    height: 50%;
+    width: 50%;
+    align-self: center;
 }
 
 #display {
     border-style: solid;
     text-align: end;
+}
+
+.buttons {
+    display: flex;
+    justify-content:space-around;
 }
