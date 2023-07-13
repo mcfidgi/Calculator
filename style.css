@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#calculator {
+    border-style: solid;
+}
+
+.buttons {
+    display: flex;
+    justify-content:space-around;
+}
+
+#display {
+    border-style: solid;
+    text-align: end;
+}
