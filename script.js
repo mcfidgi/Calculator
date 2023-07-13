@@ -36,3 +36,22 @@ function operate(firstNumber, operator, secondNumber) {
         return divide(firstNumber, secondNumber);   
     } else {alert(`Something went wrong. Operator error`)}
 };
+
+
+const one = document.querySelector(`.one`);
+const two = document.querySelector(`.two`);
+const three = document.querySelector(`.three`);
+const four = document.querySelector(`.four`);
+const five = document.querySelector(`.five`);
+const six = document.querySelector(`.six`);
+const seven = document.querySelector(`.seven`);
+const eight = document.querySelector(`.eight`);
+const nine = document.querySelector(`.nine`);
+const zero = document.querySelector(`.zero`);
+const backspaceButton = document.querySelector(`.backspace`);
+const clearButton = document.querySelector(`.clear`);
+const addButton = document.querySelector(`.add`);
+const subtractButton = document.querySelector(`.subtract`);
+const multiplyButton = document.querySelector(`.multiply`);
+const divideButton = document.querySelector(`.divide`);
+const equalsButton = document.querySelector(`.equals`);
