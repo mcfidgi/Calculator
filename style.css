@@ -3,10 +3,11 @@ body {
     flex-direction: column;
     align-content: center;
     text-align: center;
+    background-color: azure;
 }
 
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana,f Geneva, Tahoma, sans-serif;
 }
 
 #calculator {
@@ -14,14 +15,24 @@ h1 {
     height: 50%;
     width: 50%;
     align-self: center;
+    background-color: rgb(230, 64, 64);
 }
 
 #display {
     border-style: solid;
     text-align: end;
+    height: 40px;
+    padding: 10px;
+    font-size: xx-large;
+    margin: 10px;
+    background-color: antiquewhite;
 }
 
 .buttons {
     display: flex;
     justify-content:space-around;
+}
+
+.button {
+    background-color: aquamarine;
 }
