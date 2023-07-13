@@ -20,10 +20,9 @@ const divide = function(x,y) {
 };
 
 // Alrught, below will be the display variables. They will be:
-let firstNumber = `clear`;
-let operator = `clear`;
-let secondNumber = `clear`;
-let result = `clear`;
+let firstNumber = 0;
+let operator = `Nothing selected yet`;
+let secondNumber = ``;
 
 function operate(firstNumber, operator, secondNumber) {
     if (operator == `add`) {
@@ -55,3 +54,7 @@ const subtractButton = document.querySelector(`.subtract`);
 const multiplyButton = document.querySelector(`.multiply`);
 const divideButton = document.querySelector(`.divide`);
 const equalsButton = document.querySelector(`.equals`);
+
+// alright so 
+// Init: secondNumber is empty string. First Number is zero. 
+//we'll have it be so that if a button is clicked, that number is added to the string secondNumber. If an operator is clicked, then that string is converted to a number firstNumber and that operator is stored as well. The display is cleared. secondNumber is now an empty string. When you select a number it'll add it to the string secondNumber. If equalsButton is clicked, secondNumber is converted to a number and added to firstNumber, and then firstNumber is displayed. If another operator is clicked, then  secondNumber is still converted to a number and added to firstNumber, but the screen is cleared and awaits the next input.
