@@ -38,6 +38,7 @@ h1 {
     width: 50%;
     grid-template-columns: auto auto auto;
     padding: 10px;
+    gap: 5px;
 }
 
 .rightSide {
@@ -45,6 +46,7 @@ h1 {
     width: 50%;
     grid-template-columns: auto auto;
     padding: 10px;
+    gap: 5px;
 
 
 }
