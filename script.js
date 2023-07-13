@@ -49,6 +49,7 @@ const seven = document.querySelector(`.seven`);
 const eight = document.querySelector(`.eight`);
 const nine = document.querySelector(`.nine`);
 const zero = document.querySelector(`.zero`);
+const decimal = document.querySelector(`.decimal`);
 const backspaceButton = document.querySelector(`.backspace`);
 const clearButton = document.querySelector(`.clear`);
 const addButton = document.querySelector(`.add`);
@@ -97,6 +98,14 @@ nine.addEventListener('click', () => {
 zero.addEventListener('click', () => {
     secondNumber = secondNumber.concat('0');
     display.textContent = secondNumber;
+} );
+decimal.addEventListener('click', () => {
+    if (secondNumber.includes('.')) {
+        alert('You can only have one decimal pointwith our current understanding of math!');
+    } else {
+        secondNumber = secondNumber.concat('.');
+    display.textContent = secondNumber;
+    }
 } );
 clearButton.addEventListener('click', () => {
     secondNumber = '';
