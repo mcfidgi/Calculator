@@ -118,24 +118,36 @@ backspaceButton.addEventListener('click', () => {
     display.textContent = secondNumber;
 } );
 addButton.addEventListener('click', () => {
-
+    if (operator == 'Nothing selected yet') {
+        firstNumber = Number(secondNumber);
+    } else {
+        firstNumber = operate(firstNumber, operator, Number(secondNumber));
+    };
+    operator = 'add';
+    secondNumber = '';
     display.textContent = secondNumber;
 } );
 subtractButton.addEventListener('click', () => {
-
+    
     display.textContent = secondNumber;
 } );
 multiplyButton.addEventListener('click', () => {
-
+    
     display.textContent = secondNumber;
 } );
 divideButton.addEventListener('click', () => {
-
+    
     display.textContent = secondNumber;
 } );
 equalsButton.addEventListener('click', () => {
-
-    display.textContent = secondNumber;
+    if (operator == 'Nothing selected yet') {
+        console.log('No operator selected!')
+    } else {
+        firstNumber = operate(firstNumber, operator, Number(secondNumber));
+        operator = "Nothing selected yet";
+        secondNumber = '';
+        display.textContent = String(firstNumber);
+    };
 } );
 
 // alright so 
