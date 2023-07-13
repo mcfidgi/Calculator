@@ -33,6 +33,20 @@ h1 {
     justify-content:space-around;
 }
 
+.leftSide {
+    display: grid;
+    width: 50%;
+    grid-template-columns: auto auto auto;
+}
+
+.rightSide {
+    display: grid;
+    width: 50%;
+    grid-template-columns: auto auto;
+
+}
+
 .button {
     background-color: aquamarine;
+    padding: 4%;
 }
