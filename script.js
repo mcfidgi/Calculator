@@ -101,7 +101,7 @@ zero.addEventListener('click', () => {
 } );
 decimal.addEventListener('click', () => {
     if (secondNumber.includes('.')) {
-        alert('You can only have one decimal pointwith our current understanding of math!');
+        alert('You can only have one decimal point with our current understanding of math!');
     } else {
         secondNumber = secondNumber.concat('.');
     display.textContent = secondNumber;
@@ -115,6 +115,26 @@ clearButton.addEventListener('click', () => {
 } );
 backspaceButton.addEventListener('click', () => {
     secondNumber = secondNumber.slice(0, -1);
+    display.textContent = secondNumber;
+} );
+addButton.addEventListener('click', () => {
+
+    display.textContent = secondNumber;
+} );
+subtractButton.addEventListener('click', () => {
+
+    display.textContent = secondNumber;
+} );
+multiplyButton.addEventListener('click', () => {
+
+    display.textContent = secondNumber;
+} );
+divideButton.addEventListener('click', () => {
+
+    display.textContent = secondNumber;
+} );
+equalsButton.addEventListener('click', () => {
+
     display.textContent = secondNumber;
 } );
 
