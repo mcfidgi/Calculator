@@ -98,7 +98,7 @@ zero.addEventListener('click', () => {
     secondNumber = secondNumber.concat('0');
     display.textContent = secondNumber;
 } );
-clear.addEventListener('click', () => {
+clearButton.addEventListener('click', () => {
     secondNumber = '';
     firstNumber = 0;
     operator = "Nothing selected yet";
