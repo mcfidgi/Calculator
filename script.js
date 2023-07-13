@@ -37,6 +37,8 @@ function operate(firstNumber, operator, secondNumber) {
 };
 
 
+
+
 const one = document.querySelector(`.one`);
 const two = document.querySelector(`.two`);
 const three = document.querySelector(`.three`);
@@ -58,3 +60,33 @@ const equalsButton = document.querySelector(`.equals`);
 // alright so 
 // Init: secondNumber is empty string. First Number is zero. 
 //we'll have it be so that if a button is clicked, that number is added to the string secondNumber. If an operator is clicked, then that string is converted to a number firstNumber and that operator is stored as well. The display is cleared. secondNumber is now an empty string. When you select a number it'll add it to the string secondNumber. If equalsButton is clicked, secondNumber is converted to a number and added to firstNumber, and then firstNumber is displayed. If another operator is clicked, then  secondNumber is still converted to a number and added to firstNumber, but the screen is cleared and awaits the next input.
+one.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('1');
+} );
+two.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('2');
+} );
+three.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('3');
+} );
+four.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('4');
+} );
+five.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('5');
+} );
+six.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('6');
+} );
+seven.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('7');
+} );
+eight.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('8');
+} );
+nine.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('9');
+} );
+zero.addEventListener('click', () => {
+    secondNumber = secondNumber.concat('0');
+} );
