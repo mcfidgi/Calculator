@@ -113,6 +113,10 @@ clearButton.addEventListener('click', () => {
     operator = "Nothing selected yet";
     display.textContent = secondNumber;
 } );
+backspaceButton.addEventListener('click', () => {
+    secondNumber = secondNumber.slice(0, -1);
+    display.textContent = secondNumber;
+} );
 
 // alright so 
 // Init: secondNumber is empty string. First Number is zero. 
