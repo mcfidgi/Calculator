@@ -128,16 +128,34 @@ addButton.addEventListener('click', () => {
     display.textContent = firstNumber;
 } );
 subtractButton.addEventListener('click', () => {
-    
-    display.textContent = secondNumber;
+    if (operator == 'Nothing selected yet') {
+        firstNumber = Number(secondNumber);
+    } else {
+        firstNumber = operate(firstNumber, operator, Number(secondNumber));
+    };
+    operator = 'subtract';
+    secondNumber = '';
+    display.textContent = firstNumber;
 } );
 multiplyButton.addEventListener('click', () => {
-    
-    display.textContent = secondNumber;
+    if (operator == 'Nothing selected yet') {
+        firstNumber = Number(secondNumber);
+    } else {
+        firstNumber = operate(firstNumber, operator, Number(secondNumber));
+    };
+    operator = 'multiply';
+    secondNumber = '';
+    display.textContent = firstNumber;
 } );
 divideButton.addEventListener('click', () => {
-    
-    display.textContent = secondNumber;
+    if (operator == 'Nothing selected yet') {
+        firstNumber = Number(secondNumber);
+    } else {
+        firstNumber = operate(firstNumber, operator, Number(secondNumber));
+    };
+    operator = 'divide';
+    secondNumber = '';
+    display.textContent = firstNumber;
 } );
 equalsButton.addEventListener('click', () => {
     if (operator == 'Nothing selected yet') {
