@@ -125,7 +125,7 @@ addButton.addEventListener('click', () => {
     };
     operator = 'add';
     secondNumber = '';
-    display.textContent = secondNumber;
+    display.textContent = firstNumber;
 } );
 subtractButton.addEventListener('click', () => {
     
