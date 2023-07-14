@@ -173,3 +173,50 @@ equalsButton.addEventListener('click', () => {
 //we'll have it be so that if a button is clicked, that number is added to the string secondNumber. If an operator is clicked, then that string is converted to a number firstNumber and that operator is stored as well. The display is cleared. secondNumber is now an empty string. When you select a number it'll add it to the string secondNumber. If equalsButton is clicked, secondNumber is converted to a number and added to firstNumber, and then firstNumber is displayed. If another operator is clicked, then  secondNumber is still converted to a number and added to firstNumber, but the screen is cleared and awaits the next input.
 
 display.textContent = secondNumber;
+
+document.onkeydown = function (e) {
+    console.log('key down');
+    console.log(e);
+};
+document.addEventListener('keydown', (event) => {
+    let key = event.key;
+    if (key == '1') {
+        one.click();
+    } else if (key == '2') {
+        two.click();
+    } else if (key == '3') {
+        three.click();
+    } else if (key == '4') {
+        four.click();
+    } else if (key == '5') {
+        five.click();
+    } else if (key == '6') {
+        six.click();
+    } else if (key == '7') {
+        seven.click();
+    } else if (key == '8') {
+        eight.click();
+    } else if (key == '9') {
+        nine.click();
+    } else if (key == '0') {
+        zero.click();
+    } else if (key == '+') {
+        addButton.click();
+    } else if (key == '-') {
+        subtractButton.click();
+    } else if (key == '*') {
+        multiplyButton.click();
+    } else if (key == '/') {
+        divideButton.click();
+    } else if (key == '=') {
+        equalsButton.click();
+    } else if (key == 'Enter') {
+        equalsButton.click();
+    } else if (key == 'Backspace') {
+        backspaceButton.click();   
+    } else if (key == '.') {
+        decimal.click();    
+    } else {
+        return
+    }
+});
