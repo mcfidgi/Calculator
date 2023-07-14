@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-content: center;
     text-align: center;
-    background-color: azure;
+    background-color: rgb(246, 211, 255);
 }
 
 h1 {
@@ -16,6 +16,7 @@ h1 {
     width: 50%;
     align-self: center;
     background-color: rgb(230, 64, 64);
+    border-radius: 15px;
 }
 
 #display {
@@ -53,5 +54,6 @@ h1 {
 
 .button {
     background-color: aquamarine;
-    padding: 4%;
+    padding: 5%;
+    border-radius: 10px;
 }
