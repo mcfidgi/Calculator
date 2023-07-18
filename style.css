@@ -33,6 +33,7 @@ h1 {
     margin: 10px;
     background-color: antiquewhite;
     border-radius: 7px;
+    overflow: auto;
 }
 
 .buttons {
